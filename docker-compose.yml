@@ -1,10 +1,8 @@
 version: "3.3"
-
 services:
-
-  rpi-spotify:
+  rpi-spotify-no-normalize:
     build: .
-    image: flaviostutz/rpi-spotify:1.6.1
+    image: tillbill/rpi-spotify-no-normalize
     network_mode: host
     devices:
       - "/dev/snd:/dev/snd"
